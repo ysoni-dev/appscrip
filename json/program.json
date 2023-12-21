@@ -1,0 +1,148 @@
+{
+    "seotags": {
+      "title": "appscrip",
+      "description": "appscrip ecommerce website dummy project",
+      "image": "/vercel.svg",
+      "url": "www.appscrip.com",
+      "canonicalUrl": "https://appscrip.com/",
+      "keywords": "appscrip, product, service"
+    },
+    "navbar": {
+      "logo": "/static/images/Logo.svg",
+      "altlogo": "logo",
+      "brand": "LOGO",
+      "icons": [
+        {
+          "data": "/static/images/search-normal.svg",
+          "alt": "icon"
+        },
+        {
+          "data": "/static/images/heart.svg",
+          "alt": "icon"
+        },
+        {
+          "data": "/static/images/shopping-bag.svg",
+          "alt": "icon"
+        },
+        {
+          "data": "/static/images/profile.svg",
+          "alt": "icon"
+        }
+      ],
+      "lan": "ENG",
+      "dropdown": "/static/images/arrow-left.svg",
+      "menuItems": [
+        {
+          "data": "SHOP"
+        },
+        {
+          "data": "SKILLS"
+        },
+        {
+          "data": "STORIES"
+        },
+        {
+          "data": "ABOUT"
+        },
+        {
+          "data": "CONTACT US"
+        }
+      ]
+    },
+    "products": {
+      "heading": "DISCOVER OUR PRODUCTS",
+      "subheading": "Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor."
+    },
+    "footer": {
+      "heading": "Be the first to know",
+      "subheading": "Sign up for updates from mettā muse.",
+      "button": "Subscribe",
+      "contactus": "CONTACT US",
+      "contactuslist": [
+        {
+          "data": "+44 221 133 5360"
+        },
+        {
+          "data": "customercare@mettamuse.com"
+        }
+      ],
+      "currency": "Currency",
+      "icon": "/static/images/mdi_linkedin.svg",
+      "altcountry": "usa",
+      "country": "USD",
+      "tag": "Transactions will be completed in Euros and a currency reference is available on hover.",
+      "meta": "mettā muse",
+      "metadata": [
+        "About Us",
+        "Stories",
+        "Artisans",
+        "Boutiques",
+        "Contact Us",
+        "EU Compliances Docs"
+      ],
+      "quicklink": "Quick Links",
+      "quicklinkdata": [
+        "Orders & Shipping",
+        "Join/Login as a Seller",
+        "Payment & Pricing",
+        "Return & Refunds",
+        "FAQs",
+        "Privacy Policy",
+        "Privacy Policy"
+      ],
+      "follow": "Follow Us",
+      "followlogos": [
+        {
+          "data": "/static/images/mdi_linkedin.svg",
+          "alt": "instagram"
+        },
+        {
+          "data": "/static/images/mdi_linkedin.svg",
+          "alt": "linkedin"
+        }
+      ],
+      "payment": "mettā muse",
+      "accept": " Accepts",
+      "paymentlogos": [
+        {
+          "data": "/static/images/Group%20136188.svg",
+          "alt": "google-pay"
+        },
+        {
+          "data": "/static/images/Group%20136190.svg",
+          "alt": "muthoot"
+        },
+        {
+          "data": "/static/images/Group%20136192.svg",
+          "alt": "paypal"
+        },
+        {
+          "data": "/static/images/Group%20136193.svg",
+          "alt": "amex"
+        },
+        {
+          "data": "/static/images/Group%20136194.svg",
+          "alt": "ipay"
+        },
+        {
+          "data": "/static/images/Group%20136195.svg",
+          "alt": "opay"
+        }
+      ],
+      "copyright": "Copyright © 2023 mettamuse. All rights reserved."
+    },
+    "sidebar": {
+      "head1": "IDEAL FOR",
+      "category": [
+        "Men",
+        "Women",
+        " Kids",
+        "Men",
+        "Women",
+        " Kids",
+        "Men",
+        "Women",
+        " Kids"
+      ]
+    }
+  }
