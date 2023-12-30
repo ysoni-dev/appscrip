@@ -7,6 +7,7 @@ import style from "../styles/products.module.css";
 import productDataStyle from "../styles/productData.module.css";
 import displayProductStyle from "../styles/DisplayProduct.module.css";
 import Image from "next/legacy/image";
+import Accordion from "../components/accordion";
 
 const Layout = dynamic(() => import("../components/layout"));
 
@@ -15,14 +16,9 @@ const Home = ({ productDisplayData }) => {
   const productSidebar = programData.sidebar;
 
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const [isDropdownOpen, setDropdownOpen] = useState(true);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
-  };
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
   };
 
   return (
@@ -36,6 +32,20 @@ const Home = ({ productDisplayData }) => {
           <div className={style.subheading}>
             <p>{productData.subheading}</p>
           </div>
+          <hr className={style.hr}></hr>
+          <div className={style.details}>
+            <p onClick={toggleSidebar} className={style.mob}>
+              FILTER
+            </p>
+            <p className={style.web}>3425 Items</p>
+            <select className={style.customDropdown}>
+              {productData &&
+                productData.recommend.map((data, index) => (
+                  <option key={index}>{data}</option>
+                ))}
+            </select>
+          </div>
+          <hr className={style.hr}></hr>
 
           {/* product part */}
           <div className={`${productDataStyle.container}`}>
@@ -46,57 +56,48 @@ const Home = ({ productDisplayData }) => {
             >
               <input
                 type="checkbox"
-                id="vehicle1"
-                name="vehicle1"
-                value="Bike"
+                id="#"
+                name="custom"
+                value=""
               />
               <label htmlFor="vehicle1">Customizable</label>
-              <hr
-                style={{
-                  height: "1px",
-                  color: "gray",
-                  background: "gray",
-                  width: "100%",
-                }}
-              ></hr>
+              <hr className={style.hrList}></hr>
 
-              <div
-                className={`${productDataStyle.dropdown} ${
-                  isDropdownOpen && productDataStyle.open
-                }`}
-              >
-                <span onClick={toggleDropdown}>
-                  {productSidebar.head1}
-                  <span
-                    className={`${productDataStyle.arrow} ${
-                      isDropdownOpen ? productDataStyle.open : ""
-                    }`}
-                  >
-                    &#9660;
-                  </span>
-                </span>
-                <div className={productDataStyle["dropdown-content"]}>
-                  <p className={productDataStyle["checkbox-label"]}>ALL</p>
-                  {productSidebar.category.map((data, index) => (
-                    <label
-                      key={index}
-                      className={productDataStyle["checkbox-label"]}
-                    >
-                      <input type="checkbox" value="Women's" />
-                      {data}
-                    </label>
-                  ))}
-                  {/* Add more categories as needed */}
-                </div>
-              </div>
+              <Accordion
+                title={productSidebar.head1}
+                items={productSidebar.category}
+              />
+              <hr className={style.hrList}></hr>
+              <Accordion
+                title={productSidebar.head1}
+                items={productSidebar.category}
+              />
             </div>
 
             <div className={productDataStyle["main-content"]}>
               <button
                 className={productDataStyle["toggle-button"]}
                 onClick={toggleSidebar}
+                style={{ left: isSidebarOpen ? "0%" : "20%" }}
               >
-                {isSidebarOpen ? "HIDE FILTER" : "SHOW FILTER"}
+                <div className={productDataStyle.filterText}>
+                  <div
+                    className={
+                      isSidebarOpen
+                        ? productDataStyle.dropdownFilter
+                        : productDataStyle.dropdownFilterClose
+                    }
+                  >
+                    <Image
+                      src={programData.navbar.dropdown}
+                      objectFit="contain"
+                      layout="fill"
+                      alt="arrow"
+                      priority={true}
+                    />
+                  </div>
+                  {isSidebarOpen ? "HIDE" : "SHOW"} FILTER
+                </div>
               </button>
 
               {/* display data */}

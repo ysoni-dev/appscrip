@@ -1,0 +1,53 @@
+.product-accordion {
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  
+  .product-accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .product-accordion-content {
+    padding: 10px;
+  }
+  
+  .product-accordion-content label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .product-accordion-arrow {
+    font-size: 14px;
+  }
+  
+  .product-accordion.open .product-accordion-content {
+    display: block;
+  }
+  .accordionContent{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 8px;
+  }
+  .accordionHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dropdown{
+    height: 16px;
+    width: 16px;
+    position: relative;
+    rotate: 180deg;
+  }
+  .dropdownOpen{
+    height: 16px;
+    width: 16px;
+    position: relative;
+  }

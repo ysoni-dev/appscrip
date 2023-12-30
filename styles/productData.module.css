@@ -19,6 +19,7 @@
   position: relative;
 }
 .toggle-button {
+  top: -65px;
   position: absolute;
   border:none;
   background: #fff;
@@ -61,11 +62,33 @@
   margin-top: 20px;
  /* Adjust this value based on the height of your dropdown */
 }
+.filterText{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.dropdownFilter{
+  height: 16px;
+  width: 16px;
+  position: relative;
+  rotate: 270deg;
+}
+.dropdownFilterClose{
+  height: 16px;
+  width: 16px;
+  position: relative;
+  rotate: 90deg;
+}
 @media screen and (max-width: 767px) {
   .main-content{
       padding: 0px;
  }
   .sidebar{
       min-width: auto;
+ }
+  .toggle-button{
+      font-size: 14px;
+      display: none;
  }
 }

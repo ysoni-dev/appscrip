@@ -8,6 +8,7 @@
       "keywords": "appscrip, product, service"
     },
     "navbar": {
+      "burgermenu":"/static/images/burgermenu.svg",
       "logo": "/static/images/Logo.svg",
       "altlogo": "logo",
       "brand": "LOGO",
@@ -51,7 +52,10 @@
     },
     "products": {
       "heading": "DISCOVER OUR PRODUCTS",
-      "subheading": "Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor."
+      "subheading": "Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.",
+      "recommend":[
+        "Recommended","Newest first","popular","high to low","low to high"
+      ]
     },
     "footer": {
       "heading": "Be the first to know",
