@@ -1,0 +1,315 @@
+.container {
+    padding: 80px 128px 24px 128px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.footer{
+    background: #000;
+}
+.footerGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contactGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contactDetails {
+    width: auto;
+}
+.contactHeading {
+    color: var(--Misc-White, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.contactsubheading {
+    color: var(--Misc-White, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 24px;
+}
+.subscribe {
+    display: flex;
+    flex-direction: row;
+}
+.subscribe {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+.subscribeinpout {
+    width: 384px;
+    max-height: 47px;
+    padding: 14px 24px;
+    background: #FFF;
+}
+.subscribebutton {
+    display: flex;
+    width: 184px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 8px;
+}
+.subscribebutton p {
+    color: gray;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.contactusgrid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contactus {
+    color: var(--Misc-White, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.phone {
+    color: var(--Misc-White, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.currency {
+    padding-top: 8px;
+    color: var(--Misc-White, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.currencyGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+}
+.currencyIcon {
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+.country {
+    color: var(--Misc-White, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+.tag {
+    color: var(--Misc-White, #FFF);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.followGrid {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mattagrid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.meta {
+    padding-top: 2px;
+    color: var(--Misc-White, #FFF);
+    font-size: 24.713px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.metalist {
+    color: var(--Misc-White, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.quicklink {
+    padding-top: 8px;
+    color: var(--Misc-White, #FFF);
+    font-size: 24.713px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.followus {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.follow {
+    color: var(--Misc-White, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.socialmedia {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.socialmediaicon {
+    position: relative;
+    height: 32px;
+    width: 32px;
+}
+.payment {
+    padding-top: 40px;
+    color: var(--Misc-White, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.accept {
+    text-transform: uppercase;
+}
+.paymentlogos {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.paymentlogosdata {
+    position: relative;
+    width: 56px;
+    height: 35px;
+}
+.copyright {
+    padding-top: 20px;
+}
+.copyright p {
+    color: var(--Misc-White, #FFF);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mobile{
+    display: none;
+}
+/* tab view */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container{
+        padding: 48px 4.796%;
+   }
+    .subscribeinpout{
+        width: 50%;
+   }
+    .subscribebutton{
+        width: 50%;
+   }
+    .contactGrid{
+        gap: 30px;
+   }
+    .meta{
+        font-size: 20px;
+   }
+    .metalist{
+        font-size: 16px;
+   }
+    .paymentlogosdata{
+        width: 24px;
+        height: 24px;
+   }
+}
+/* mobile view */
+@media screen and (max-width:767px) {
+    .container {
+        padding: 24px 16px;
+   }
+    .contactsubheading {
+        padding-top: 8px;
+   }
+    .subscribe {
+        padding-top: 16px;
+        gap: 8px;
+   }
+    .subscribeinpout {
+        width: 50%;
+        max-height: 47px;
+        padding: 14px 24px;
+   }
+    .subscribebutton{
+        height: 48px;
+        width: 50%;
+   }
+    .contactGrid{
+        flex-direction: column;
+   }
+    .mobile{
+        display: block;
+   }
+    .followGrid{
+        flex-direction: column;
+        gap: 24px;
+   }
+    .payment{
+        padding-top: 0px;
+   }
+    .copyright{
+        padding-top: 0px;
+   }
+    .followGrid{
+        padding-top: 0px;
+   }
+   .meta{
+    font-size: 20px;
+   }
+   .metalist{
+    font-size: 16px;
+   }
+}
+@media screen and (max-width: 767px) {
+    .web{
+        display: none;
+   }
+    .mob{
+        display: block;
+   }
+}
+@media screen and (min-width: 768px) {
+    .web{
+        display: block;
+   }
+    .mob{
+        display: none;
+   }
+}
+@media screen and (min-width:1025px) and (max-width:1350px) {
+    .subscribeinpout{
+        width: 60%;
+   }
+    .subscribebutton{
+        width: 40%;
+   }
+}

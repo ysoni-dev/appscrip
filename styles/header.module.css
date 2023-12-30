@@ -1,0 +1,149 @@
+.container {
+    padding: 36px 96px 24px 96px;
+}
+.headergrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerlogo {
+    height: 36px;
+    width: 36px;
+    position: relative;
+}
+.headerBrand {
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-left: 90%;
+}
+.headerIconsGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+.headerIcons {
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+.dropdown {
+    height: 16px;
+    width: 16px;
+    position: relative;
+}
+.lang {
+    color: var(--Text-Text, #252020);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+.menuItemGrid {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    justify-content: center;
+}
+.menuItemGrid h3 {
+    color: var(--Text-Text, #252020);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mobile{
+    display: none;
+}
+.language{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.burgerIcon{
+    display: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+@media screen and (max-width: 767px) {
+    .burgerIcon{
+        display: block;
+   }
+    .container{
+        padding: 16px 
+   }
+    .headerlogo {
+        height: 20px;
+        width: 20px;
+   }
+    .headerBrand{
+        font-size: 20px;
+        margin-left: 0%;
+   }
+    .headerIconsGrid{
+        gap: 12px;
+   }
+    .headerIcons {
+        height: 20px;
+        width: 20px;
+   }
+    .mob{
+        display: none;
+   }
+    .mobile{
+        display: block;
+   }
+    .menuItemGrid{
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 32px;
+   }
+    .menuItemGrid h3{
+        font-size: 14px;
+   }
+    .menuContainer{
+        flex-direction: column;
+   }
+    .logos{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+   }
+}
+.menuOpen {
+    @media screen and (max-width: 767px) {
+        left: 0px;
+        position: fixed;
+        display: none;
+   }
+}
+/* tab view */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container{
+        padding: 48px 4.796%;
+   }
+    .menuItemGrid{
+        padding-top: 38px;
+   }
+    .menuItemGrid h3{
+        font-size: 16PX;
+   }
+    .headerBrand{
+        font-size: 28px;
+   }
+}
